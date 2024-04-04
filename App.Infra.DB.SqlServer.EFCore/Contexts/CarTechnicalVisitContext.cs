@@ -1,5 +1,6 @@
 ﻿using App.Domain.Core.AccountAgg.Entities;
 using App.Domain.Core.RequestAg.Entities;
+using App.Infra.DB.SqlServer.EFCore.Configs.RequestAg;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -32,6 +33,9 @@ namespace App.Infra.DB.SqlServer.EFCore.Contexts
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+            var assembly = typeof(CarConfiguration).Assembly;
+            modelBuilder.ApplyConfigurationsFromAssembly(assembly);
+
             base.OnModelCreating(modelBuilder);
         }
     }
