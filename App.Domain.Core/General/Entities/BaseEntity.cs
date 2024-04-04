@@ -15,5 +15,15 @@ namespace App.Domain.Core.General.Entities
 
         public int Id { get;private set; }
         public bool IsDeleted { get;private set; }
+
+        void Delete()
+        {
+            IsDeleted = true;
+        }
+
+        void Activate()
+        {
+            IsDeleted = false;
+        }
     }
 }
