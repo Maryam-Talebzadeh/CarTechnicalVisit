@@ -6,4 +6,16 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Folder Include="AccountAgg\Data\" />
+    <Folder Include="AccountAgg\AppServices\" />
+    <Folder Include="AccountAgg\DTOs\" />
+    <Folder Include="AccountAgg\Services\" />
+    <Folder Include="RequestAg\AppServices\" />
+    <Folder Include="RequestAg\Data\" />
+    <Folder Include="RequestAg\DTOs\" />
+    <Folder Include="RequestAg\Entities\" />
+    <Folder Include="RequestAg\Services\" />
+  </ItemGroup>
+
 </Project>
