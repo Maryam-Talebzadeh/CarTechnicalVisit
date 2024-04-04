@@ -1,4 +1,5 @@
-﻿using System;
+﻿using App.Domain.Core.General.Entities;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
@@ -7,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace App.Domain.Core.AccountAgg.Entities
 {
-    public class User
+    public class User : BaseEntity
     {
         public User(string fullName, long nationalCode, string phoneNumber, string address)
         {
@@ -17,7 +18,6 @@ namespace App.Domain.Core.AccountAgg.Entities
             Address = address;
         }
 
-        public int Id { get; private set; }
         public string FullName { get; private set; }
         public long NationalCode { get; private set; }
         public string PhoneNumber { get; private set; }
