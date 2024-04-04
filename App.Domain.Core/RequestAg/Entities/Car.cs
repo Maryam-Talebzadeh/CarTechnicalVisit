@@ -20,7 +20,6 @@ namespace App.Domain.Core.RequestAg.Entities
         public int NumberPlate { get;private set; }
         public Int16 ProductionYear { get; private set; }
         public int ModelId { get; private set; }
-        public int RequestId { get; set; }
         public int OwnerId { get; set; }
         public User User { get; set; }
         public Request Requset { get; set; }
