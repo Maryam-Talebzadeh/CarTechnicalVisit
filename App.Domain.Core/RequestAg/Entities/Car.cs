@@ -1,4 +1,5 @@
-﻿using App.Domain.Core.General.Entities;
+﻿using App.Domain.Core.AccountAgg.Entities;
+using App.Domain.Core.General.Entities;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -19,6 +20,11 @@ namespace App.Domain.Core.RequestAg.Entities
         public int NumberPlate { get;private set; }
         public Int16 ProductionYear { get; private set; }
         public int ModelId { get; private set; }
+        public int RequestId { get; set; }
+        public int OwnerId { get; set; }
+        public User User { get; set; }
+        public Request Requset { get; set; }
+        public CarModel Model { get; set; }
 
         void Edit(int numberPlate, Int16 productionYear, int modelId)
         {

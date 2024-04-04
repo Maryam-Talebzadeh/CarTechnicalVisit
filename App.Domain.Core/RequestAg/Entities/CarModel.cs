@@ -15,6 +15,7 @@ namespace App.Domain.Core.RequestAg.Entities
         }
 
         public string Title { get; private set; }
+        public List<Car> Cars { get; set; }
 
         void Edit(string title)
         {
