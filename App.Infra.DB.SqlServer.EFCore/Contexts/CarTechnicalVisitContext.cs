@@ -1,4 +1,5 @@
 ﻿using App.Domain.Core.AccountAgg.Entities;
+using App.Domain.Core.OperatorAgg.Entities;
 using App.Domain.Core.RequestAg.Entities;
 using App.Infra.DB.SqlServer.EFCore.Configs.RequestAg;
 using Microsoft.EntityFrameworkCore;
@@ -27,7 +28,14 @@ namespace App.Infra.DB.SqlServer.EFCore.Contexts
 
         public DbSet<Request> Requests { get; set; }
         public DbSet<Car> Cars { get; set; }
-        public DbSet<CarModel> carModels { get; set; }
+        public DbSet<CarModel> CarModels { get; set; }
+        public DbSet<Manufacturer> Manufacturer { get; set; }
+
+        #endregion
+
+        #region Owner
+
+        public DbSet<Operator> Operators { get; set; }
 
         #endregion
 
