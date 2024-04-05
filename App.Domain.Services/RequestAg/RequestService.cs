@@ -1,6 +1,4 @@
-﻿
-
-using App.Domain.Core.RequestAg.Data;
+﻿using App.Domain.Core.RequestAg.Data;
 using App.Domain.Core.RequestAg.DTOs;
 using App.Domain.Core.RequestAg.Services;
 
