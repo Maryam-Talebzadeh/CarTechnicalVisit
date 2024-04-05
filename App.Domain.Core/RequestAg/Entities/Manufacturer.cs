@@ -10,5 +10,6 @@ namespace App.Domain.Core.RequestAg.Entities
     public class Manufacturer : BaseEntity
     {
         public string Title { get; set; }
+        public List<Car> Cars { get; set; }
     }
 }

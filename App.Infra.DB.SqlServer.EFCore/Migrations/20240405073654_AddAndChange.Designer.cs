@@ -4,6 +4,7 @@ using App.Infra.DB.SqlServer.EFCore.Contexts;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace App.Infra.DB.SqlServer.EFCore.Migrations
 {
     [DbContext(typeof(CarTechnicalVisitContext))]
-    partial class CarTechnicalVisitContextModelSnapshot : ModelSnapshot
+    [Migration("20240405073654_AddAndChange")]
+    partial class AddAndChange
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

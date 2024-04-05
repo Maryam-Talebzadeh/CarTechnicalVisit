@@ -16,6 +16,7 @@ namespace App.Infra.DB.SqlServer.EFCore.Configs.RequestAg
             #region Relations
 
             builder.HasOne(c => c.Model).WithMany(m => m.Cars).HasForeignKey(c => c.ModelId);
+            builder.HasOne(c => c.Manufacturer).WithMany(m => m.Cars).HasForeignKey(c => c.ManufacturerId);
 
             #endregion
         }
