@@ -28,5 +28,10 @@ namespace App.Infra.DataAccess.Repos.EFCore.General
         {
             return _context.Set<T>().ToList();
         }
+
+        public T GetBy(int id)
+        {
+           return _context.Set<T>().FirstOrDefault(x => x.Id == id);
+        }
     }
 }
