@@ -1,5 +1,6 @@
 ﻿
 
+using App.Domain.Core.RequestAg.Data;
 using App.Domain.Core.RequestAg.DTOs;
 using App.Domain.Core.RequestAg.Services;
 
@@ -7,6 +8,13 @@ namespace App.Domain.Services.RequestAg
 {
     public class RequestService : IRequestService
     {
+        private readonly IRequestRepository _requestRepository;
+
+        public RequestService(IRequestRepository requestRepository)
+        {
+            _requestRepository = requestRepository;
+        }
+
         public void Accept(int id)
         {
             throw new NotImplementedException();
@@ -26,5 +34,7 @@ namespace App.Domain.Services.RequestAg
         {
             throw new NotImplementedException();
         }
+
+
     }
 }
