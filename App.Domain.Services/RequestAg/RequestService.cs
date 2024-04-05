@@ -33,6 +33,14 @@ namespace App.Domain.Services.RequestAg
             throw new NotImplementedException();
         }
 
+        private OperationResult DailyRequestPermission()
+        {
+            var today = (DateTime.Now).Month;
 
+            if(Utilities.IsEven(today))
+            {
+
+            }
+        }
     }
 }
