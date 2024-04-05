@@ -9,7 +9,7 @@ namespace App.Domain.Core.RequestAg.Services
 {
     public interface IRequestService
     {
-        void Add(RequestDTO command);
+        OperationResult Add(CreateRequestDTO command);
         List<RequestDTO> GetAll();
         void Accept(int id);
         void Reject(int id);

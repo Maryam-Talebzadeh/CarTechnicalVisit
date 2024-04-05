@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace App.Domain.Core.AccountAgg.Data
 {
-    public interface UserRepository: IRepository<User>
+    public interface IUserRepository: IRepository<User>
     {
 
     }

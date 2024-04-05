@@ -33,5 +33,10 @@ namespace App.Infra.DataAccess.Repos.EFCore.General
         {
            return _context.Set<T>().FirstOrDefault(x => x.Id == id);
         }
+
+        public void Save()
+        {
+            _context.SaveChanges();
+        }
     }
 }

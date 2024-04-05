@@ -13,5 +13,6 @@ namespace App.Domain.Core.General.Data
         int Create(T entity);
         List<T> GetAll();
         T GetBy(int id);
+        void Save();
     }
 }
