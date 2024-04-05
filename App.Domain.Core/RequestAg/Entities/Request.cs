@@ -15,6 +15,7 @@ namespace App.Domain.Core.RequestAg.Entities
             CreationDate = DateTime.Now;
             UserId = userId;
             CarId = carId;
+            StatusId = 1;
         }
 
         public DateTime CreationDate { get;private set; }
@@ -22,5 +23,17 @@ namespace App.Domain.Core.RequestAg.Entities
         public int CarId { get; private set; }
         public User User { get; private set; }
         public Car Car { get; private set; }
+        public int StatusId { get;private set; }
+        public Status Status { get; set; }
+
+        void AcceptRequest()
+        {
+            StatusId = 2;
+        }
+
+        void RejectRequest()
+        {
+            StatusId = 3;
+        }
     }
 }
