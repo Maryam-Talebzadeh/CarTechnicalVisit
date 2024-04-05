@@ -9,7 +9,7 @@ namespace App.Domain.Services.Memory
 {
     public class DailyRequests
     {
-        static int Requests;
+       public static int Requests;
 
         static void ResetRequests(object state)
         {
