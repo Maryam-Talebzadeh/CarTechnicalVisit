@@ -11,4 +11,8 @@
     <Folder Include="RequestAg\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\App.Domain.Core\App.Domain.Core.csproj" />
+  </ItemGroup>
+
 </Project>

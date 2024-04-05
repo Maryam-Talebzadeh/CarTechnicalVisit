@@ -10,7 +10,6 @@
     <Folder Include="AccountAgg\AppServices\" />
     <Folder Include="AccountAgg\DTOs\" />
     <Folder Include="AccountAgg\Services\" />
-    <Folder Include="OperatorAgg\AppServices\" />
     <Folder Include="OperatorAgg\DTOs\" />
     <Folder Include="RequestAg\AppServices\" />
   </ItemGroup>
