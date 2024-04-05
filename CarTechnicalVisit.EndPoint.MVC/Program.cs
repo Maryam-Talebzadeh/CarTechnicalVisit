@@ -1,11 +1,17 @@
+
+
+using App.Infra.DB.SqlServer.EFCore.Contexts;
+using Microsoft.EntityFrameworkCore;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 
 #region DbContext
-
-
+builder.Services.AddDbContext<CarTechnicalVisitContext>(option =>
+option.UseSqlServer(builder.Configuration.GetConnectionString("CarTechnicalVisitConnectionString"))
+) ;
 
 #endregion
 
