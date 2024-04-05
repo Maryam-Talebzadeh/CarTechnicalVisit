@@ -9,6 +9,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllersWithViews();
 
 #region DbContext
+
 builder.Services.AddDbContext<CarTechnicalVisitContext>(option =>
 option.UseSqlServer(builder.Configuration.GetConnectionString("CarTechnicalVisitConnectionString"))
 ) ;
