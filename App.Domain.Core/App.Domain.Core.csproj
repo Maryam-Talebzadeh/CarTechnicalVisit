@@ -12,7 +12,6 @@
     <Folder Include="AccountAgg\Services\" />
     <Folder Include="OperatorAgg\AppServices\" />
     <Folder Include="OperatorAgg\DTOs\" />
-    <Folder Include="OperatorAgg\Data\" />
     <Folder Include="OperatorAgg\Services\" />
     <Folder Include="RequestAg\AppServices\" />
   </ItemGroup>
