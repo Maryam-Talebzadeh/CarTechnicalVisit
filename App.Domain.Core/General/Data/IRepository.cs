@@ -1,4 +1,5 @@
-﻿using App.Domain.Core.RequestAg.Entities;
+﻿using App.Domain.Core.General.Entities;
+using App.Domain.Core.RequestAg.Entities;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,9 +8,9 @@ using System.Threading.Tasks;
 
 namespace App.Domain.Core.General.Data
 {
-    public interface IRepository<T>
+    public interface IRepository<T> where T : BaseEntity
     {
-        void Create(T entity);
+        int Create(T entity);
         List<T> GetAll();
     }
 }

@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace App.Infra.DataAccess.Repos.EFCore.RequestAg
 {
-    public class RequestRepository : BaseRepository<Request> ,IRequestRepository
+    public class RequestRepository : BaseRepository<Request> ,IRequestRepository 
     {
         private readonly CarTechnicalVisitContext _context;
         public RequestRepository(CarTechnicalVisitContext context) : base(context)
